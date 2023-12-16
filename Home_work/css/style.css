@@ -995,7 +995,7 @@ address {
 
   footer::before {
     position: absolute;
-    background-image: url(/images/loaf-smoll.png);
+    background-image: url(/Home_work/images/loaf-smoll.png);
     content: "";
     width: 147px;
     height: 231px;
@@ -1009,7 +1009,7 @@ address {
 
   footer::after {
     position: absolute;
-    background-image: url(/images/loafs-mob.png);
+    background-image: url(/Home_work/images/loafs-mob.png);
     content: "";
     width: 112px;
     height: 120px;
@@ -1420,7 +1420,7 @@ address {
 
   footer::before {
     position: absolute;
-    background-image: url(/images/loaf-smoll.png);
+    background-image: url(/Home_work/images/loaf-smoll.png);
     content: "";
     width: 147px;
     height: 231px;
@@ -1434,7 +1434,7 @@ address {
 
   footer::after {
     position: absolute;
-    background-image: url(/images/loafs-mob.png);
+    background-image: url(/Home_work/images/loafs-mob.png);
     content: "";
     width: 100px;
     height: 100px;
@@ -1583,7 +1583,7 @@ address {
 
   .mobile-menu::after {
     position: absolute;
-    background-image: url(/images/linked-path-group.png);
+    background-image: url(/Home_work/images/linked-path-group.png);
     content: "";
     width: 138px;
     height: 138px;
