@@ -164,7 +164,7 @@ section {
 
 .headline-section {
   height: 736px;
-  background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url(../images/header.jpg);
+  background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url(/Home_work/images/header.jpg);
   display: flex;
   text-align: center;
   align-items: center;
@@ -695,7 +695,7 @@ address {
 
 .modal::before {
   position: absolute;
-  background-image: url(/images/linked-path-group.png);
+  background-image: url(/Home_work/images/linked-path-group.png);
   content: "";
   width: 138px;
   height: 138px;
@@ -1160,7 +1160,7 @@ address {
 
   .mobile-menu::after {
     position: absolute;
-    background-image: url(/images/linked-path-group.png);
+    background-image: url(/Home_work/images/linked-path-group.png);
     content: "";
     width: 138px;
     height: 138px;
