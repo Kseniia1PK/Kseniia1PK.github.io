@@ -456,7 +456,7 @@ h4 {
 
 footer::before {
   position: absolute;
-  background-image: url(/images/smoll-loaf.png);
+  background-image: url(/Home_work/images/smoll-loaf.png);
   content: "";
   width: 179px;
   height: 120px;
@@ -469,7 +469,7 @@ footer::before {
 
 footer::after {
   position: absolute;
-  background-image: url(/images/loafs.png);
+  background-image: url(/Home_work/images/loafs.png);
   content: "";
   width: 378px;
   height: 187px;
