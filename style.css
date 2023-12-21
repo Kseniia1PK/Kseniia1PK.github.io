@@ -134,11 +134,19 @@ span {
   padding: 0;
 }
 
-
+.swiper-slide{
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
 .section-list-walrus {
   background-image: url(img4.jpg);
-  min-height: 300px;
-  max-width: 30vw;
+  /* min-height: 300px;
+  max-width: 30vw; */
+  height: 444px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -150,8 +158,7 @@ span {
 
 .section-list-horseshoe {
   background-image: url(img3.jpg);
-  min-height: 300px;
-  max-width: 30vw;
+  height: 444px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -162,8 +169,7 @@ span {
 
 .section-list-handlebar {
   background-image: url(img7.jpg);
-  min-height: 300px;
-  max-width: 30vw;
+  height: 444px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
