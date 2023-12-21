@@ -142,8 +142,8 @@ span {
   transition-property: transform;
   display: block;
 }
-.section-list-walrus {
-  background-image: url(img4.jpg);
+.section-list-one {
+  background-image: url(/);
   /* min-height: 300px;
   max-width: 30vw; */
   height: 444px;
@@ -156,7 +156,7 @@ span {
   /* додається до img */
 }
 
-.section-list-horseshoe {
+.section-list-two {
   background-image: url(img3.jpg);
   height: 444px;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ span {
   object-fit: cover;
 }
 
-.section-list-handlebar {
+.section-list-three {
   background-image: url(img7.jpg);
   height: 444px;
   background-repeat: no-repeat;
