@@ -401,4 +401,13 @@ height: 30vh;
     display: flex;
     align-items: center;
   }
+  .carousel-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .carousel-button {
+    display: none;
+  }
 }
