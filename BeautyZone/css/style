@@ -1,0 +1,28 @@
+* {
+box-sizing: border-box;
+}
+:root {
+  --color-brand-light: #2B7FFF;
+  --color-brand-black: #011C44;
+  --color-bgr-light: #FFF;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+
+
+body{
+font-family: Roboto, Play, sans-serif;
+font-size: 22px;
+font-weight: 400;
+line-height: 1,72;
+background-color: var(--color-bgr-light);
+}
+
+a{
+cursor: pointer;
+text-decoration: none;
+}
+
