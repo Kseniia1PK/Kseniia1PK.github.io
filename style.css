@@ -403,11 +403,20 @@ height: 30vh;
   }
   .carousel-button {
     display: none;
+    overflow: hidden;
   }
 }
 
 @media screen and (min-width: 381px) and (max-width: 767px) {
+  h1{
+    height: 30vh;
+      width: 86vw;
+      font-size: 30px;
+      font-weight: 500;
+    
+    }
   .carousel-button {
     display: none;
+    overflow: hidden;
   }
 }
