@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;
   font-style: normal;
@@ -26,7 +29,7 @@ a {
   height: 8vh;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 2;
 
 }
 
@@ -64,7 +67,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* Горизонтальное выравнивание по центру */
   align-items: center;
   border-radius: 20px;
   font-family: "Montserrat", sans-serif;
@@ -107,7 +109,7 @@ span {
   background-color: transparent;
   border: 1px solid black;
   cursor: pointer;
-  fill: var(--color-primary-dark);
+  fill: black;
 }
 
 .carousel-button.next {
@@ -115,8 +117,8 @@ span {
 }
 
 .carousel-button:hover {
-  background-color: var(--color-primary-dark);
-  fill: var(--color-primary-light);
+  background-color: rgb(231, 179, 35);
+  fill: black;
 }
 
 .arrow {
@@ -140,6 +142,9 @@ span {
   position: relative;
   transition-property: transform;
   display: block;
+  border: 1px solid rgb(231, 179, 35);
+  border-radius: 16px;
+  
 }
 .section-list-one {
   background-image: url(/imgproject1.jpg);
@@ -180,14 +185,21 @@ span {
 h4 {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .section-list-text {
-  margin: auto 24px 24px 24px;
-  height: max-content;
-
-
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 10px;
+  width: 90%;
+  min-height: 120px;
+  border-radius: 16px;
+  border: 1px solid rgb(231, 179, 35);
+  text-align: center;
+  background-color: #5B5C61;
+  opacity: 0.95;
 }
 
 .section-list-text>p {
