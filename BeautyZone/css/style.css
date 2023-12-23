@@ -151,6 +151,13 @@ h1 {
   margin-bottom: 14px;
 }
 
+.header__button:hover {
+  border-radius: 32px;
+  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-bgr-light);
+  color: var(--color-brand-black);
+}
+
 .section__headline-text {
   color: var(--color-text-light);
   font-size: 12px;
@@ -232,6 +239,43 @@ span {
   display: none;
 }
 
+/* Секція advantages */
+.section__advantages__title {
+  margin-top: 176px;
+  margin-bottom: 48px;
+  text-align: center;
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.section__advantages__title>span {
+  text-transform: none;
+}
+.section__advantages-list{
+  display: flex;
+  gap: 56px;
+}
+.section__advantages-list-item{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: 316px;
+height: 181px;
+border-radius: 32px;
+background: var(--color-bgr-light);
+padding: 24px 32px;
+}
+.advantages-icon{
+  width: 48px;
+  height: 48px;
+ margin-bottom: 8px;
+}
+.section__advantages-list-item>p{
+  margin: 0;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -413,205 +457,216 @@ span {
     font-weight: 400;
     line-height: 1;
     text-align: justify;
-  margin: 0;
-  margin-bottom: 16px;
+    margin: 0;
+    margin-bottom: 16px;
   }
- 
+
   .star-icon {
     display: block;
     position: absolute;
     width: 40px;
     height: 40px;
     transform: rotate(9deg);
-  right: 22px;
-  margin: 0;
-  margin-top: -16px;
+    right: 22px;
+    margin: 0;
+    margin-top: -16px;
   }
 
 
   .section__about-us-container {
     display: none;
   }
-}
+  /* Секція advantages */
+  .section__advantages__title>span{
 
-
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    body {
-      font-size: 14px;
-    }
-
-    .header__nav {
-      display: none;
-    }
-
-    .header__nav-icon {
-      width: 24px;
-      height: 24px;
-    }
-
-    .nav-mobile {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      width: 100%;
-    }
-
-    .logo {
-      width: max-content;
-      height: max-content;
-      margin-top: 16px;
-      margin-left: 20px;
-    }
-
-    .nav-mobile-menu {
-      border: none;
-      background-color: transparent;
-      fill: var(--color-bgr-light);
-      padding-top: 20px;
-      padding-right: 20px;
-    }
-
-    .mobile-menu-container {
-      display: flex;
-      position: fixed;
-      flex-direction: column;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 100vh;
-      transform: translateX(-100%);
-      background-color: var(--color-bgr-light);
-    }
-
-    .mobile__menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-
-    .is-open {
-      transform: translateX(0);
-    }
-
-
-    .mobile__menu-nav {
-      display: block;
-      margin-top: 32px;
-      margin-left: 20px;
-      padding: 0;
-    }
-
-    .mobile-menu__list-open {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav-item-open {
-      flex-direction: column;
-    }
-
-    .header__nav-list {
-      padding: 0;
-    }
-
-    .mobile-menu__btn-close {
-
-      margin-top: 20px;
-      margin-right: 20px;
-      border: none;
-      fill: var(--color-brand-black);
-      background: transparent;
-      padding: 0;
-    }
-
-    .section__headline {
-      padding: 0;
-      padding-left: 5vw;
-    }
-
-    .section__headline-title {
-      line-height: 1.5;
-      padding-top: 105px;
-      margin: 0;
-    }
-
-    .title {
-      display: none;
-    }
-
-    .title-mob {
-      display: block;
-      margin: 0;
-      font-family: Play;
-      font-size: 84px;
-      font-weight: 700;
-      line-height: 0.85;
-      text-transform: capitalize;
-      color: var(--color-brand-light);
-    }
-
-    .header__button {
-      margin-top: 32px;
-      width: 186px;
-      height: 44px;
-      border-radius: 24px;
-      background-color: var(--color-brand-light);
-      color: var(--color-bgr-light);
-      font-size: 16px;
-      font-weight: 600;
-      border: none;
-      margin-bottom: 8px;
-    }
-
-    .section__headline-text {
-      color: var(--color-text-light);
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 1.63;
-    }
-
-    /* Секція переваг */
-h2{
-  font-family: Play;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1;
-}
-.section__about-us-text{
-  font-size: 16px;
-}
-.section__about-us-foto {
-  justify-content: space-evenly
-}
-
-.about-us-img {
-  margin-bottom: 9px;
-  width: 220px;
-  height: 220px;
-}
-
-.about-us-foto {
-  margin-left: 8vw;
-  width: 220px;
-  height: 220px;
-}
-.starsmoll-icon {
-  width: 20px;
-  height: 20px;
-  transform: rotate(2deg);
-  
-}
-
-.starbig-icon {
-  width: 32px;
-  height: 32px;
-  transform: rotate(353deg);
-  margin-left: 20px;
-}
   }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+
+  .logo {
+    width: max-content;
+    height: max-content;
+    margin-top: 16px;
+    margin-left: 20px;
+  }
+
+  .nav-mobile-menu {
+    border: none;
+    background-color: transparent;
+    fill: var(--color-bgr-light);
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile-menu-container {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    background-color: var(--color-bgr-light);
+  }
+
+  .mobile__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .is-open {
+    transform: translateX(0);
+  }
+
+
+  .mobile__menu-nav {
+    display: block;
+    margin-top: 32px;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .mobile-menu__list-open {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-item-open {
+    flex-direction: column;
+  }
+
+  .header__nav-list {
+    padding: 0;
+  }
+
+  .mobile-menu__btn-close {
+
+    margin-top: 20px;
+    margin-right: 20px;
+    border: none;
+    fill: var(--color-brand-black);
+    background: transparent;
+    padding: 0;
+  }
+
+  .section__headline {
+    padding: 0;
+    padding-left: 5vw;
+  }
+
+  .section__headline-title {
+    line-height: 1.5;
+    padding-top: 105px;
+    margin: 0;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .title-mob {
+    display: block;
+    margin: 0;
+    font-family: Play;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 0.85;
+    text-transform: capitalize;
+    color: var(--color-brand-light);
+  }
+
+  .header__button {
+    margin-top: 32px;
+    width: 186px;
+    height: 44px;
+    border-radius: 24px;
+    background-color: var(--color-brand-light);
+    color: var(--color-bgr-light);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 8px;
+  }
+
+  .section__headline-text {
+    color: var(--color-text-light);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.63;
+  }
+
+  /* Секція переваг */
+  .section__about-us {
+    gap: 8vw;
+  }
+
+  h2 {
+    font-family: Play;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .section__about-us-text {
+    font-size: 16px;
+  }
+
+  .section__about-us-foto {
+    justify-content: space-evenly;
+  }
+
+  .about-us-img {
+    margin-bottom: 9px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-us-foto {
+    margin-left: 8vw;
+    width: 220px;
+    height: 220px;
+  }
+
+  .starsmoll-icon {
+    width: 20px;
+    height: 20px;
+    transform: rotate(2deg);
+
+  }
+
+  .starbig-icon {
+    width: 32px;
+    height: 32px;
+    transform: rotate(353deg);
+    margin-left: 20px;
+  }
+}
