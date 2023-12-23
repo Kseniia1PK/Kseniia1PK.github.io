@@ -149,7 +149,7 @@ span {
   
 }
 .section-list-one {
-  background-image: url(/imgproject1.jpg);
+  background-image: url(/imgproject1.png);
   height: 444px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,7 +171,17 @@ span {
 }
 
 .section-list-three {
-  background-image: url(/imgproject3.jpg);
+  background-image: url(/imgproject3.png);
+  height: 444px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  object-fit: cover;
+}
+.section-list-four {
+  background-image: url(/imgproject4.png);
   height: 444px;
   background-repeat: no-repeat;
   background-size: cover;
