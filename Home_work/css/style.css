@@ -27,6 +27,7 @@ body {
   margin: 0;
   max-width: 1440px;
   background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
   
 }
 
@@ -41,10 +42,10 @@ a {
   font-weight: 600;
 }
 
-a:hover,
-:active {
+a:hover {
   color: var(--color-brand-light);
   /* font-weight: 600; */
+ 
 }
 
 .logo {

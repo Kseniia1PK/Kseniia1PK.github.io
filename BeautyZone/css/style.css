@@ -19,7 +19,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1, 72;
+  line-height: 1.72;
   background-color: var(--color-bgr-light);
   color: var(--color-brand-black);
   max-width: 1440px;
@@ -101,16 +101,13 @@ ul {
 /* Перша секція */
 
 .section__headline {
-  background-image: linear-gradient(89deg, #FFF 30.62%,
-      rgba(255, 255, 255, 0.85) 41.31%,
-      rgba(255, 255, 255, 0.19) 58.65%,
-      rgba(255, 255, 255, 0.00) 72.78%),
-    url(/BeautyZone/images/header2x.jpg);
-  height: 658px;
+  background-image: url(/BeautyZone/images/header.jpg);
+  height: 780px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 126.5px;
-  margin-left: 14vw;
+  padding-left: 12vw;
 }
 
 .section__headline-title {
@@ -240,8 +237,13 @@ span {
 }
 
 /* Секція advantages */
+.section__advantages {
+  background-image: url(/BeautyZone/images/background.png);
+  padding-bottom: 96px;
+}
+
 .section__advantages__title {
-  margin-top: 176px;
+  padding-top: 176px;
   margin-bottom: 48px;
   text-align: center;
   font-family: Play;
@@ -253,29 +255,50 @@ span {
 .section__advantages__title>span {
   text-transform: none;
 }
-.section__advantages-list{
+
+.section__advantages-list {
   display: flex;
+  justify-content: center;
   gap: 56px;
+  padding: 0;
 }
-.section__advantages-list-item{
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-width: 316px;
-height: 181px;
-border-radius: 32px;
-background: var(--color-bgr-light);
-padding: 24px 32px;
+
+.section__advantages-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 316px;
+  height: 181px;
+  border-radius: 32px;
+  background: var(--color-bgr-light);
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+  padding: 24px 32px;
 }
-.advantages-icon{
+
+.advantages-icon {
   width: 48px;
   height: 48px;
- margin-bottom: 8px;
+  margin-bottom: 8px;
 }
-.section__advantages-list-item>p{
+
+.section__advantages-list-item>p {
   margin: 0;
+  line-height: 1.33;
+  color: #000;
+  font-size: 18px;
 }
+
+/* Секція Процедури */
+.section__procedures-title {
+  text-align: center;
+}
+
+.section__procedures-title>span {
+  text-transform: none;
+}
+
+
 
 
 @media screen and (max-width: 767px) {
@@ -372,14 +395,10 @@ padding: 24px 32px;
   }
 
   .section__headline {
-    background-image: linear-gradient(89deg, #FFF 30.62%,
-        rgba(255, 255, 255, 0.85) 41.31%,
-        rgba(255, 255, 255, 0.19) 58.65%,
-        rgba(255, 255, 255, 0.00) 72.78%),
-      url(/BeautyZone/images/header-mob.jpg);
+    background-image: url(/BeautyZone/images/header-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 346px;
+    height: 446px;
     align-items: center;
     text-align: center;
     padding: 0;
@@ -459,6 +478,7 @@ padding: 24px 32px;
     text-align: justify;
     margin: 0;
     margin-bottom: 16px;
+    line-height: normal;
   }
 
   .star-icon {
@@ -469,17 +489,60 @@ padding: 24px 32px;
     transform: rotate(9deg);
     right: 22px;
     margin: 0;
-    margin-top: -16px;
+    margin-top: 6px;
   }
 
 
   .section__about-us-container {
     display: none;
   }
-  /* Секція advantages */
-  .section__advantages__title>span{
 
+  /* Секція advantages */
+  .section__advantages {
+    background-image: url(/BeautyZone/images/background-mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+  .section__advantages__title {
+    margin-top: 104px;
+    margin-bottom: 24px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .section__advantages__title>span {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .section__advantages-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 22px;
+    gap: 16px;
+    border-radius: 32px;
+    margin-bottom: 40px;
+  }
+
+  .section__advantages-list-item {
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+  }
+
+  .advantages-icon {
+    width: 48px;
+    height: 48px;
+    /* height: max-content; */
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+  }
+
 }
 
 
@@ -531,6 +594,7 @@ padding: 24px 32px;
     height: 100vh;
     transform: translateX(-100%);
     background-color: var(--color-bgr-light);
+    z-index: 1;
   }
 
   .mobile__menu {
@@ -580,7 +644,8 @@ padding: 24px 32px;
 
   .section__headline {
     padding: 0;
-    padding-left: 5vw;
+    padding-left: 12vw;
+    background-position: center;
   }
 
   .section__headline-title {
@@ -627,6 +692,7 @@ padding: 24px 32px;
   /* Секція переваг */
   .section__about-us {
     gap: 8vw;
+    padding: 0 40px;
   }
 
   h2 {
@@ -668,5 +734,29 @@ padding: 24px 32px;
     height: 32px;
     transform: rotate(353deg);
     margin-left: 20px;
+  }
+
+  /* Секція переваг */
+  .section__advantages {
+    padding: 0 40px;
+  }
+
+  .section__advantages__title {
+    font-family: Play;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .section__advantages-list {
+    gap: 20px;
+    padding: 0;
+  }
+
+  .section__advantages-list-item {
+    padding: 12px 16px;
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
   }
 }
