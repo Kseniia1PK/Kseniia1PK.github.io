@@ -242,6 +242,7 @@ span {
   padding-bottom: 96px;
 }
 
+
 .section__advantages__title {
   padding-top: 176px;
   margin-bottom: 48px;
@@ -292,14 +293,91 @@ span {
 /* Секція Процедури */
 .section__procedures-title {
   text-align: center;
+  margin-bottom: 48px;
 }
 
 .section__procedures-title>span {
   text-transform: none;
 }
 
+.section__procedures-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
 
+.carousel-button {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brand-black);
+}
 
+.section__procedures-list {
+  display: flex;
+  gap: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0;
+}
+
+.procedures-container-item {
+  display: flex;
+  height: 456px;
+  position: relative;
+  text-align: center;
+ 
+}
+.procedures-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 120px;
+}
+
+.procedures-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, 
+  rgba(1, 28, 68, 0.00) 48.53%, 
+  rgba(1, 28, 68, 0.73) 84.61%, 
+  #011C44 101.39%);
+  border-radius: inherit;
+  z-index: 1;
+}
+.procedures-container-img {
+  border-radius: 4px 120px;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.carousel-button.arrow {
+  transform: rotate(180deg);
+}
+
+.procedures-text {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  color: var(--color-bgr-light);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.18;
+  padding-bottom: 32px;
+  z-index: 1;
+}
 
 @media screen and (max-width: 767px) {
   body {
