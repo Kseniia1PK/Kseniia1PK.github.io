@@ -173,8 +173,9 @@
           <use href="./images/icons.svg#icon-Arrow"></use>
         </svg>
       </button>
+      <div class="swiper-container"> 
       <ul class="section__procedures-list">
-        <li class="procedures-container-item">
+        <li class="swiper-slide">
           <article>
             <div class="procedures-container">
               <img class="procedures-container-img" src="/BeautyZone/images/procedure_one.jpg" alt="">
@@ -182,7 +183,7 @@
             </div>
           </article>
         </li>
-        <li class="procedures-container-item">
+        <li class="swiper-slide">
           <article>
             <div class="procedures-container">
               <img class="procedures-container-img" src="/BeautyZone/images/procedure_two.jpg" alt="">
@@ -190,7 +191,7 @@
             </div>
           </article>
         </li>
-        <li class="procedures-container-item">
+        <li class="swiper-slide">
           <article>
             <div class="procedures-container">
               <img class="procedures-container-img" src="/BeautyZone/images/procedure_three.jpg" alt="">
@@ -199,7 +200,13 @@
           </article>
         </li>
       </ul>
-      <button class="carousel-button prev arrow" type="button">
+      <div class="pagination">
+        <span class="pagination__button"></span>
+        <span class="pagination__button"></span>
+        <span class="pagination__button"></span>
+      </div>
+    </div>
+      <button class="carousel-button next arrow" type="button">
         <svg class="arrow" width="16" height="16">
           <use href="./images/icons.svg#icon-Arrow"></use>
         </svg>
@@ -290,6 +297,7 @@
   </footer> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../BeautyZone/mobale_menu.js"></script>
+  <script src="../BeautyZone/carusel.js"></script>
 </body>
 
 </html>

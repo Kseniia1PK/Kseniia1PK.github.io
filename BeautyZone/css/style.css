@@ -292,9 +292,13 @@ span {
 
 /* Секція Процедури */
 .section__procedures-title {
+  position: relative;
   text-align: center;
-  margin-bottom: 48px;
+  background: linear-gradient(rgba(243, 248, 255, 1) 10%, 
+  rgba(243, 248, 255, 0.3) 50%,rgba(243, 248, 255, 0.1) 30% );
+  padding-bottom: 48px;
 }
+
 
 .section__procedures-title>span {
   text-transform: none;
@@ -306,6 +310,10 @@ span {
   justify-content: space-between;
   padding: 0 100px;
 }
+.carousel-button.arrow {
+  transform: rotate(180deg);
+  border: solid 1px var(--color-brand-black);
+}
 
 .carousel-button {
   display: flex;
@@ -314,20 +322,27 @@ span {
   height: 44px;
   align-items: center;
   justify-content: center;
-  color: var(--color-brand-black);
+  fill: var(--color-brand-black);
+  border: solid 1px var(--color-brand-black);
+}
+.carousel-button:hover{
+ fill: var(--color-bgr-light);
+ border: none;
+  background-color: var(--color-brand-light);
 }
 
 .section__procedures-list {
   display: flex;
   gap: 16px;
+  margin: 0;
   margin-left: 32px;
   margin-right: 32px;
   padding: 0;
 }
 
-.procedures-container-item {
+.swiper-slide {
   display: flex;
-  height: 456px;
+  max-height: 456px;
   position: relative;
   text-align: center;
  
@@ -361,9 +376,6 @@ span {
   z-index: 0;
 }
 
-.carousel-button.arrow {
-  transform: rotate(180deg);
-}
 
 .procedures-text {
   margin: 0;
@@ -378,6 +390,29 @@ span {
   padding-bottom: 32px;
   z-index: 1;
 }
+
+/* перевірити */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 96px;
+}
+
+.pagination__button {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: var(--color-brand-light);
+}
+
+.pagination__button--active {
+  background-color: var(--color-brand-light);
+}
+
+
 
 @media screen and (max-width: 767px) {
   body {
@@ -817,6 +852,7 @@ span {
   /* Секція переваг */
   .section__advantages {
     padding: 0 40px;
+    padding-bottom: 96px;
   }
 
   .section__advantages__title {
@@ -837,4 +873,17 @@ span {
     padding: 12px 16px;
     box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
   }
+
+  /* секція процедури */
+  .section__procedures-title {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(235, 243, 255, 1) 5%, rgba(235, 243, 255, 0.8) 30%, rgba(235, 243, 255, 0.2) 65%);
+    padding-bottom: 48px;
+  }
+  .swiper-container{
+    max-height: 345px;
+  }
 }
+
+
