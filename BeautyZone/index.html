@@ -240,44 +240,48 @@
           </button>
         </div>
       </div>
-
     </section>
 
 
-    <!-- <section class="secttion__сontacts" id="secttion__сontacts">
-      <h2>Як нас <span>знайти</span></h2>
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713498!2d30.51560037649418!3d50.44235657159064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1703261889602!5m2!1sru!2sua"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <section id="section__сontacts">
+      <h2 class="secttion__сontacts-title">Як нас <span>знайти</span></h2>
+      <div class="section__сontacts">
+        <div class="section__сontacts-map">
+          <iframe class="сontacts-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713498!2d30.51560037649418!3d50.44235657159064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1703261889602!5m2!1sru!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+
+        <div class="section__сontacts-form">
+          <h3 class="сontacts-form-title">Запишіться <span>безкоштовно</span><br> та отримайте подарунок</h3>
+          <form name="contact-form">
+            <div class="form-field">
+              <label class="form-label" for="user-name">Ім'я</label>
+              <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ваше ім'я та прізвище"
+                required minlength="5" maxlength="24" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="user-tel">Телефон</label>
+              <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Ваш номер телефону"
+                minlength="13" maxlength="13" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="user-email">Електронна пошта</label>
+              <input class="form-input" type="email" name="user-email" id="user-email"
+                placeholder="Ваша електронна пошта" required minlength="10" maxlength="35" oninput="validateEmail()" />
+            </div>
+
+            
+            <div class="form-text">
+              <button class="modal-btn-open form-modal-btn" type="submit">Записатись безкоштовно</button>
+              <p>Натискаючи на кнопку я погоджуюсь<br> з політикою конфіденційності</p>
+            </div>
+        </div>
       </div>
-      <div>
-        <h3>Запишіться <span>безкоштовно</span><br> та отримайте подарунок</h3>
-        <form name="contact-form">
-          <div class="form-field">
-            <label class="form-label" for="user-name">Ім'я</label>
-            <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ваше ім'я та прізвище"
-              required minlength="5" maxlength="24" />
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="user-tel">Телефон</label>
-            <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Ваш номер телефону"
-              minlength="13" maxlength="13" />
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="user-email">Електронна пошта</label>
-            <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Ваша електронна пошта"
-              required minlength="10" maxlength="35" oninput="validateEmail()" />
-          </div>
-
-          <button class="modal-btn-open form-modal-btn" type="submit">Записатись безкоштовно</button>
-          <div class="form-text">
-            <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
-          </div>
-
-    </section> -->
+    </section>
   </main>
 
   <!-- <footer>

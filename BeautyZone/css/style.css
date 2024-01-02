@@ -8,7 +8,7 @@
   --color-bgr-light: #FFF;
   --color-text-light: #4A4A4A;
   --color-not-active: #747272;
-  
+
 }
 
 html {
@@ -301,8 +301,8 @@ span {
 .section__procedures-title {
   position: relative;
   text-align: center;
-  background: linear-gradient(rgba(243, 248, 255, 1) 10%, 
-  rgba(243, 248, 255, 0.3) 50%,rgba(243, 248, 255, 0.1) 30% );
+  background: linear-gradient(rgba(243, 248, 255, 1) 10%,
+      rgba(243, 248, 255, 0.3) 50%, rgba(243, 248, 255, 0.1) 30%);
   padding-bottom: 48px;
 }
 
@@ -318,6 +318,7 @@ span {
   padding: 0 100px;
   gap: 32px;
 }
+
 .carousel-button.arrow {
   transform: rotate(180deg);
   border: solid 1px var(--color-brand-black);
@@ -333,9 +334,10 @@ span {
   fill: var(--color-brand-black);
   border: solid 1px var(--color-brand-black);
 }
-.carousel-button:hover{
- fill: var(--color-bgr-light);
- border: none;
+
+.carousel-button:hover {
+  fill: var(--color-bgr-light);
+  border: none;
   background-color: var(--color-brand-light);
 }
 
@@ -356,9 +358,10 @@ span {
   display: flex;
   position: relative;
   text-align: center;
- 
+
 }
-.procedures-container{
+
+.procedures-container {
   display: flex;
   justify-content: center;
   position: relative;
@@ -374,13 +377,14 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, 
-  rgba(1, 28, 68, 0.00) 48.53%, 
-  rgba(1, 28, 68, 0.73) 84.61%, 
-  #011C44 101.39%);
+  background: linear-gradient(180deg,
+      rgba(1, 28, 68, 0.00) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011C44 101.39%);
   border-radius: inherit;
   z-index: 1;
 }
+
 .procedures-container-img {
   border-radius: 4px 120px;
   display: block;
@@ -422,7 +426,137 @@ span {
   background-color: var(--color-brand-light);
 }
 
+/* Секція контакти */
 
+.secttion__сontacts-title {
+  margin-top: 96px;
+  margin-bottom: 48px;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.secttion__сontacts-title>span {
+  text-transform: none;
+}
+
+.section__сontacts {
+  display: flex;
+  gap: 32px;
+  padding: 0 12.2vw;
+  height: 481px;
+}
+
+.section__сontacts-map {
+  width: 57%;
+}
+
+.сontacts-map {
+  border-radius: 32px;
+  height: 481px;
+  width: 100%;
+}
+
+.section__сontacts-form {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/BeautyZone/images/background-modal.png);
+  background-size: cover;
+  border-radius: 32px;
+  width: 40%;
+  height: 481px;
+  padding: 48px 56px;
+}
+
+.сontacts-form-title {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  color: var(--color-bgr-light);
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.сontacts-form-title>span {
+  text-transform: none;
+}
+
+.form-label {
+  display: none;
+}
+
+.form-field {
+  display: flex;
+  align-content: flex-start;
+  width: 100%;
+  height: 52px;
+  border-radius: 32px;
+  border: 2px solid var(--color-not-active);
+  margin-bottom: 16px;
+}
+
+.form-input {
+  font-family: Roboto;
+font-size: 13px;
+font-weight: 400;
+  background: transparent;
+  padding: 18px 32px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--color-bgr-light);
+  border-radius: 32px;
+}
+
+.form-input:focus {
+  background-color: var(--color-not-active);
+
+}
+
+.form-field:focus {
+  background-color: var(--color-not-active);
+  border: none;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: var(--color-bgr-light);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+.form-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-btn-open {
+  background-color: var(--color-brand-light);
+  color: var(--color-bgr-light);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 32px;
+  width: 281px;
+  height: 53px;
+  padding: 0;
+  border: none;
+}
+.modal-btn-open:hover{
+  border: 2px solid var(--color-brand-light);
+  color: var(--color-brand-black);
+  background-color: var(--color-bgr-light);
+}
+.form-text>p{
+font-size: 12px;
+font-weight: 400;
+line-height: 1.5; 
+color: var(--color-not-active);
+text-align: center;
+
+}
 
 @media screen and (max-width: 767px) {
   body {
@@ -667,6 +801,11 @@ span {
     height: 52px;
   }
 
+  .carousel-button {
+    display: none;
+  }
+
+
 }
 
 
@@ -893,25 +1032,32 @@ span {
     background: linear-gradient(to bottom, rgba(235, 243, 255, 1) 5%, rgba(235, 243, 255, 0.8) 30%, rgba(235, 243, 255, 0.2) 65%);
     padding-bottom: 48px;
   }
-  .swiper-container{
+
+  .swiper-container {
     min-height: 345px;
   }
-  
-  .section__procedures-container{
+
+  .section__procedures-container {
     padding: 0 20px;
     gap: 16px;
 
   }
-  .procedures-container{
+
+  .procedures-container {
     display: flex;
-   
+
   }
-  .procedures-container-img{
-   height: max-content;
+
+  .procedures-container-img {
+    height: max-content;
   }
-  .procedures-text{
-  margin: 0 auto;
+
+  .procedures-text {
+    margin: 0 auto;
+  }
+
+  .section__сontacts {
+    padding: 0 6.1vw;
+
   }
 }
-
-
