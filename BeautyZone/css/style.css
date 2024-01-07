@@ -84,7 +84,6 @@ ul {
 }
 
 .header__nav-icon {
-  fill: var(--color-brand-black);
   transition: fill 0.3s ease;
   width: 32px;
   height: 32px;
@@ -93,7 +92,6 @@ ul {
 .header__nav-icon:hover {
   fill: none;
   stroke: var(--color-brand-light);
-  stroke-width: 2;
   transition: stroke 0.3s ease;
 }
 
@@ -635,15 +633,13 @@ address {
 }
 
 .footer-icon {
-  stroke: var(--color-bgr-light);
-  stroke-width: 1.5;
   width: 42px;
   height: 42px;
 }
 
 .footer-icon:hover {
   stroke: var(--color-brand-light);
-  stroke-width: 1.5;
+  stroke-width: 2px;
 }
 
 .nav-text {
@@ -700,6 +696,7 @@ footer::after {
     fill: var(--color-bgr-light);
     margin-top: 20px;
     margin-right: 20px;
+    cursor: pointer;
   }
 
   .mobile-menu-container {
@@ -759,6 +756,7 @@ footer::after {
     fill: var(--color-brand-black);
     background: transparent;
     padding: 0;
+    cursor: pointer;
   }
 
   .section__headline {
@@ -1081,7 +1079,8 @@ footer::after {
   .nav-mobile-menu {
     border: none;
     background-color: transparent;
-    fill: var(--color-bgr-light);
+    fill: var(--color-brand-light);
+    cursor: pointer;
     padding-top: 20px;
     padding-right: 20px;
   }
@@ -1140,10 +1139,15 @@ footer::after {
     margin-top: 20px;
     margin-right: 20px;
     border: none;
-    fill: var(--color-brand-black);
     background: transparent;
     padding: 0;
+    cursor: pointer;
   }
+
+  .mobile__menu-icon{
+    fill: var(--color-brand-black);
+  }
+
 
   .section__headline {
     padding: 0;
