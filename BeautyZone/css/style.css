@@ -406,7 +406,6 @@ span {
   z-index: 1;
 }
 
-/* перевірити */
 .pagination {
   display: flex;
   justify-content: center;
@@ -428,7 +427,7 @@ span {
 
 /* Секція контакти */
 
-.secttion__сontacts-title {
+.section__сontacts-title {
   margin-top: 96px;
   margin-bottom: 48px;
   text-align: center;
@@ -437,7 +436,7 @@ span {
   font-weight: 700;
 }
 
-.secttion__сontacts-title>span {
+.section__сontacts-title>span {
   text-transform: none;
 }
 
@@ -445,7 +444,7 @@ span {
   display: flex;
   gap: 32px;
   padding: 0 12.2vw;
-  height: 481px;
+
 }
 
 .section__сontacts-map {
@@ -500,8 +499,8 @@ span {
 
 .form-input {
   font-family: Roboto;
-font-size: 13px;
-font-weight: 400;
+  font-size: 13px;
+  font-weight: 400;
   background: transparent;
   padding: 18px 32px;
   width: 100%;
@@ -527,11 +526,13 @@ font-weight: 400;
   font-style: normal;
   font-weight: 400;
 }
-.form-text{
+
+.form-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .modal-btn-open {
   background-color: var(--color-brand-light);
   color: var(--color-bgr-light);
@@ -544,19 +545,127 @@ font-weight: 400;
   padding: 0;
   border: none;
 }
-.modal-btn-open:hover{
+
+.modal-btn-open:hover {
   border: 2px solid var(--color-brand-light);
   color: var(--color-brand-black);
   background-color: var(--color-bgr-light);
 }
-.form-text>p{
-font-size: 12px;
-font-weight: 400;
-line-height: 1.5; 
-color: var(--color-not-active);
-text-align: center;
+
+.form-text>p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-not-active);
+  text-align: center;
+}
+
+.section__сontacts-map-mob {
+  display: none;
+}
+
+/* Футер */
+footer {
+  position: relative;
+  max-height: 390px;
+  background-image: url(/BeautyZone/images/bgc-footer.png);
+  padding: 56px 100px;
+  gap: 20px;
+  margin-top: 94px;
+  font-size: 16px;
+}
+
+.footer-logo,
+.footer-nav-conteiner,
+address,
+.footer__nav-text {
+  flex-basis: 25%;
+}
+
+.footer__logo-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo {
+  width: 83px;
+  height: 42px;
+}
+
+
+.footer__nav-list,
+.footer__nav-contact,
+.footer__nav-text-list {
+  color: var(--color-bgr-light);
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav-list {
+  gap: 16px;
+}
+
+.footer__nav {
+  display: flex;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__nav-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-style: normal;
 
 }
+
+.footer__nav-contact>li:hover {
+  color: var(--color-brand-light);
+}
+
+.footer__icon-list {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icon {
+  stroke: var(--color-bgr-light);
+  stroke-width: 1.5;
+  width: 42px;
+  height: 42px;
+}
+
+.footer-icon:hover {
+  stroke: var(--color-brand-light);
+  stroke-width: 1.5;
+}
+
+.nav-text {
+  color: var(--color-not-active);
+  font-size: 13px;
+}
+
+footer::after {
+  position: absolute;
+  background-image: url(/BeautyZone/images/footerAfter.png);
+  content: "";
+  width: 278px;
+  height: 213px;
+  bottom: -41px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
 
 @media screen and (max-width: 767px) {
   body {
@@ -574,7 +683,7 @@ text-align: center;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 100vw;
+    width: 100%;
   }
 
   .logo {
@@ -611,7 +720,7 @@ text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
   }
 
   .is-open {
@@ -757,9 +866,10 @@ text-align: center;
 
   /* Секція advantages */
   .section__advantages {
-    background-image: url(/BeautyZone/images/background-mob.png);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 1) 70%), url(/BeautyZone/images/background-mob.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 0;
   }
 
   .section__advantages__title {
@@ -796,6 +906,17 @@ text-align: center;
     /* height: max-content; */
   }
 
+  /* Секція процедури */
+
+  .section__procedures-container {
+    padding: 0 20px;
+  }
+
+  .section__procedures-title {
+    background: var(--color-bgr-light);
+    padding-bottom: 0;
+  }
+
   .icon {
     width: 52px;
     height: 52px;
@@ -806,6 +927,125 @@ text-align: center;
   }
 
 
+  /* Секція Контакти */
+  .section__сontact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 0;
+    gap: 0;
+  }
+
+  .section__сontacts-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  .section__сontacts {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .section__сontacts-map {
+    display: none;
+  }
+
+  .section__сontacts-form {
+    width: 100%;
+    padding: 42px 24px;
+    height: 434px;
+    margin-bottom: 86px;
+    background-image: url(/BeautyZone/images/bgi-mob.png);
+  }
+
+  .сontacts-form-title {
+    margin-bottom: 24px;
+  }
+
+  .сontacts-form-title>span {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .modal-btn-open {
+    width: 241px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .section__сontacts-map-mob {
+    display: block;
+    margin: 0 -20px;
+    height: 232px;
+
+  }
+
+  .сontacts-map {
+    height: 232px;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  /* Футер */
+  footer::after {
+    display: none;
+  }
+
+  footer {
+    margin: 0;
+    padding: 32px 151.5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+    background-image: url(/BeautyZone/images/footer-mob.png);
+  }
+
+  .footer__logo-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-logo {
+    width: 57px;
+    height: 30px;
+    margin-bottom: 26px;
+  }
+
+  .footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer__nav-text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-text-item {
+    display: none;
+  }
+
+  .footer__nav-contact {
+    display: none;
+  }
+
+  .footer-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-text {
+    line-height: 1.5;
+    font-size: 12px;
+  }
 }
 
 
@@ -1056,8 +1296,81 @@ text-align: center;
     margin: 0 auto;
   }
 
-  .section__сontacts {
-    padding: 0 6.1vw;
 
+
+  /* Секція Контакти */
+  .section__сontact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 0;
+    gap: 0;
   }
+
+  .section__сontacts-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  .section__сontacts {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .section__сontacts-map {
+    display: none;
+  }
+
+  .section__сontacts-form {
+    width: 100%;
+    padding: 42px 24px;
+    height: 434px;
+    margin-bottom: 24px;
+  }
+
+  .сontacts-form-title {
+    margin-bottom: 24px;
+  }
+
+  .сontacts-form-title>span {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .modal-btn-open {
+    width: 241px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .section__сontacts-map-mob {
+    display: block;
+    margin: 0 -20px;
+    height: 432px;
+  }
+
+  .сontacts-map {
+    height: 432px;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  /* Футер */
+  footer {
+    padding: 36px 60px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  footer::after {
+    display: none;
+  }
+.footer__logo-nav{
+  gap: 10px;
+}
 }

@@ -22,8 +22,8 @@
       <ul class="header__nav-ul">
         <li class="nav__item"><a href="#section__about-us">Про нас</a></li>
         <li class="nav__item"><a href="#section__advantages">Чому ми</a></li>
-        <li class="nav__item"><a href="#secttion__procedures">Наші процедури</a></li>
-        <li class="nav__item"><a href="#secttion__сontacts">Контакти</a></li>
+        <li class="nav__item"><a href="#section__procedures">Наші процедури</a></li>
+        <li class="nav__item"><a href="#section__сontacts">Контакти</a></li>
       </ul>
 
       <ul class="header__nav-list">
@@ -166,7 +166,7 @@
     </section>
 
 
-    <section class="section__procedures" id="section__procedures">
+    <section id="section__procedures">
       <div class="swiper">
         <h2 class="section__procedures-title">Наші <span>процедури</span></h2>
         <div class="section__procedures-container carousel">
@@ -243,8 +243,8 @@
     </section>
 
 
-    <section id="section__сontacts">
-      <h2 class="secttion__сontacts-title">Як нас <span>знайти</span></h2>
+    <section class="section__сontact" id="section__сontacts">
+      <h2 class="section__сontacts-title">Як нас <span>знайти</span></h2>
       <div class="section__сontacts">
         <div class="section__сontacts-map">
           <iframe class="сontacts-map"
@@ -273,61 +273,86 @@
               <input class="form-input" type="email" name="user-email" id="user-email"
                 placeholder="Ваша електронна пошта" required minlength="10" maxlength="35" oninput="validateEmail()" />
             </div>
+          </form>
 
-            
-            <div class="form-text">
-              <button class="modal-btn-open form-modal-btn" type="submit">Записатись безкоштовно</button>
-              <p>Натискаючи на кнопку я погоджуюсь<br> з політикою конфіденційності</p>
-            </div>
+          <div class="form-text">
+            <button class="modal-btn-open form-modal-btn" type="submit">Записатись безкоштовно</button>
+            <p>Натискаючи на кнопку я погоджуюсь<br> з політикою конфіденційності</p>
+          </div>
+
+        </div>
+
+        <div class="section__сontacts-map-mob">
+          <iframe class="сontacts-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713498!2d30.51560037649418!3d50.44235657159064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1703261889602!5m2!1sru!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- <footer>
-    <nav class="footer__nav">
-      <div>
-        <a class="logo" href="./index.html"> <img src="/BeautyZone/images/logo.svg" alt="Логотип компанії"></a>
-        <ul>
-          <li><a href="#section__about-us">Про нас</a></li>
-          <li><a href="#section__advantages">Чому ми</a></li>
-          <li><a href="#secttion__procedures">Наші процедури</a></li>
-          <li><a href="#secttion__сontacts">Контакти</a></li>
-        </ul>
+  <footer>
+    <div class="footer__logo-nav">
+      <div class="footer-logo">
+        <a href="./index.html"> <img src="/BeautyZone/images/logo.svg" alt="Логотип компанії"></a>
       </div>
-      <div>
-        <ul>
-          <li>+ 38 (096) 000 00 07</li>
-          <li>beautyzone@gmail.com</li>
-          <li>Україна, м. Київ,
-            вул. Тараса Шевченка 5</li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#"><svg width="42" height="42">
-              <use href="./images/icons.svg#icon-telephone-icon"></use>
-            </svg></a>
-          </li>
-          <li>
-            <a href=""><svg width="42" height="42">
-              <use href="./images/icons.svg#icon-facebook-icon"></use>
-            </svg></a>
-            
-          </li>
-          <li>
-            <a href=""><svg width="42" height="42">
-              <use href="./images/icons.svg#icon-instagram-icon"></use>
-            </svg></a>
-            
-          </li>
-        </ul>
-        <ul>
-          <li><a href="#">Політика конфіденційності</a></li>
-          <li>&copy;2022 Дані захищені</li>
-        </ul>
+
+      <div class="footer-nav-conteiner">
+        <nav class="footer__nav">
+          <div>
+            <ul class="footer__nav-list">
+              <li><a href="#section__about-us">Про нас</a></li>
+              <li><a href="#section__advantages">Чому ми</a></li>
+              <li><a href="#section__procedures">Наші процедури</a></li>
+              <li><a href="#section__сontacts">Контакти</a></li>
+            </ul>
+          </div>
       </div>
-    </nav>
-  </footer> -->
+      <address>
+        <ul class="footer__nav-contact">
+          <li>
+            <a href="tel:+3800960000007">+ 38 (096) 000 00 07</a>
+          </li>
+          <li>
+            <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/2qsyE277tMiqHSoP8" target="_blank">
+              Україна, м. Київ,<br>
+              вул. Тараса Шевченка 5</a>
+          </li>
+        </ul>
+
+        <ul class="footer__icon-list">
+          <li>
+            <a href="#"><svg class="footer-icon" width="42" height="42">
+                <use href="./images/icons.svg#icon-telephone-icon"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a href="#"><svg class="footer-icon" width="42" height="42">
+                <use href="./images/icons.svg#icon-facebook-icon"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a href="#"><svg class="footer-icon" width="42" height="42">
+                <use href="./images/icons.svg#icon-instagram-icon"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </address>
+      <div class="footer__nav-text">
+        <ul class="footer__nav-text-list">
+          <li class="nav-text-item"><a href="#">Політика конфіденційності</a></li>
+          <li class="nav-text">&copy;2022 Дані захищені</li>
+        </ul>
+        </nav>
+      </div>
+
+
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../BeautyZone/mobale_menu.js"></script>
   <script src="../BeautyZone/carusel.js"></script>
