@@ -324,7 +324,6 @@
               вул. Тараса Шевченка 5</a>
           </li>
         </ul>
-
         <ul class="footer__icon-list">
           <li>
             <a href="#"><svg class="footer-icon" width="42" height="42">
@@ -342,20 +341,75 @@
               </svg></a>
           </li>
         </ul>
+
       </address>
       <div class="footer__nav-text">
+        <ul class="footer__icon-list-mob">
+          <li>
+            <a href="#"><svg class="footer-icon" width="42" height="42">
+                <use href="./images/icons.svg#icon-telephonefooter-icon"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a href="#"><svg class="footer-icon" width="42" height="42">
+                <use href="./images/icons.svg#icon-ffb-icon"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a href="#"><svg class="footer-icon" width="42" height="42">
+                <use href="/BeautyZone/images/icons.svg#icon-footerinst-icon"></use>
+              </svg></a>
+          </li>
+        </ul>
         <ul class="footer__nav-text-list">
           <li class="nav-text-item"><a href="#">Політика конфіденційності</a></li>
           <li class="nav-text">&copy;2022 Дані захищені</li>
         </ul>
+        
         </nav>
       </div>
-
-
   </footer>
+
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close" tupe="button">
+        <svg class="mobile__menu-icon" width="24" height="24">
+          <use href="/BeautyZone/images/icons.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal-title">Замовити<br> дзвінок</h2>
+      <p class="modal-text">Запишіться <span>безкоштовно</span><br>
+        та отримайте подарунок</p>
+
+      <form name="contact-form">
+            <div class="form-field">
+              <label class="form-label" for="user-name">Ім'я</label>
+              <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ваше ім'я та прізвище"
+                required minlength="5" maxlength="24" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="user-tel">Телефон</label>
+              <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Ваш номер телефону"
+                minlength="13" maxlength="13" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="user-email">Електронна пошта</label>
+              <input class="form-input" type="email" name="user-email" id="user-email"
+                placeholder="Ваша електронна пошта" required minlength="10" maxlength="35" oninput="validateEmail()" />
+            </div>
+          </form>
+
+          <div class="form-text">
+            <button class="modal-btn-open form-modal-btn" type="submit">Записатись безкоштовно</button>
+            <p>Натискаючи на кнопку я погоджуюсь<br> з політикою конфіденційності</p>
+          </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../BeautyZone/mobale_menu.js"></script>
   <script src="../BeautyZone/carusel.js"></script>
+  <script src="../BeautyZone/modal.js"></script>
 </body>
 
 </html>

@@ -600,7 +600,9 @@ address,
 }
 
 .footer__nav-list {
+  display: flex;
   gap: 16px;
+  flex-direction: column;
 }
 
 .footer__nav {
@@ -631,7 +633,9 @@ address {
   padding: 0;
   margin: 0;
 }
-
+.footer__icon-list-mob{
+  display: none;
+}
 .footer-icon {
   width: 42px;
   height: 42px;
@@ -658,6 +662,87 @@ footer::after {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(1, 31, 74, 0.40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  transition: opacity .3s, visibility .3s;
+}
+
+.modal {
+  position: relative;
+  max-height: 681px;
+  height: 100%;
+  max-width: 723px;
+  width: 100%;
+  padding: 42px 144px;
+  border-radius: 48px;
+  background-image: url(/BeautyZone/images/bgi-modal.png);
+  text-align: center;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-title {
+  color: var(--color-bgr-light);
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.modal-text {
+  color: var(--color-bgr-light);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.modal-text>span {
+  color: var(--color-brand-light);
+  text-transform: none;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.modal-btn-open .form-modal-btn {
+  padding: 16px 32px;
+  ;
+  width: 217px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+
 
 
 
@@ -1006,7 +1091,7 @@ footer::after {
   .footer__logo-nav {
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 0;
   }
 
   .footer-logo {
@@ -1028,9 +1113,21 @@ footer::after {
   }
 
   .nav-text-item {
+    display: block;
+    margin-top: 16px;
+  }
+  .footer__icon-list{
     display: none;
   }
-
+  .footer__icon-list-mob{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  .nav-text{
+    display: none;
+  }
   .footer__nav-contact {
     display: none;
   }
@@ -1043,7 +1140,33 @@ footer::after {
   .nav-text {
     line-height: 1.5;
     font-size: 12px;
+    margin: 16px 0;
   }
+
+  /* Модальне вікно */
+  .modal {
+    position: relative;
+    max-height: 481px;
+    height: 90%;
+    max-width: 523px;
+    width: 90%;
+    padding: 20px 34px;
+  }
+  .modal-title{
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+.modal-text{
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.modal-text>span{
+  font-size: 16px;
+}
+.modal-btn-close{
+  top: 20px;
+  right: 22px;
+}
 }
 
 
@@ -1144,7 +1267,7 @@ footer::after {
     cursor: pointer;
   }
 
-  .mobile__menu-icon{
+  .mobile__menu-icon {
     fill: var(--color-brand-black);
   }
 
@@ -1366,7 +1489,7 @@ footer::after {
 
   /* Футер */
   footer {
-    padding: 36px 60px;
+    padding: 36px 40px;
     margin: 0;
     font-size: 14px;
   }
@@ -1374,7 +1497,52 @@ footer::after {
   footer::after {
     display: none;
   }
-.footer__logo-nav{
-  gap: 10px;
+
+  .footer__logo-nav {
+    gap: 10px;
+  }
+.footer__nav-text{
+  display: flex;
+  flex-direction: column;
 }
+  .footer__nav-text-list {
+    text-align: center;
+  }
+  .footer__nav-contact{
+    min-width: 158px;
+  }
+  .footer__icon-list-mob{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 0 10px;
+  }
+  .footer-icon{
+    width: 42px;
+    height: 42px;
+    padding: 0 2px;
+  }
+  .footer__icon-list {
+    display: none;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .modal {
+    max-height: 641px;
+    height: 100%;
+    max-width: 683px;
+    width: 100%;
+  }
+
+  .modal-title {
+    font-size: 42px;
+  
+  }
+
+  .modal-text {
+    font-size: 18px;
+  
+  }
 }
