@@ -288,7 +288,10 @@ span {
 }
 
 /* Секція Процедури */
-
+.section__swiper{
+  position: relative;
+  z-index: 0;
+}
 .formats-section__container {
   width: 100vw;
   overflow: hidden;
@@ -315,6 +318,7 @@ span {
   /* justify-content: space-between; */
   padding: 0 100px;
   gap: 32px;
+  z-index: 0;
 }
 
 .carousel-button.arrow {
@@ -688,6 +692,7 @@ footer::after {
   border-radius: 48px;
   background-image: url(/BeautyZone/images/bgi-modal.png);
   text-align: center;
+  z-index: 2;
 }
 
 .modal-btn-close {
@@ -993,11 +998,13 @@ footer::after {
 
   .section__procedures-container {
     padding: 0 20px;
+    z-index: -1;
   }
 
   .section__procedures-title {
     background: var(--color-bgr-light);
     padding-bottom: 0;
+    z-index: -1;
   }
 
   .icon {
@@ -1147,10 +1154,12 @@ footer::after {
   .modal {
     position: relative;
     max-height: 481px;
-    height: 90%;
+    height: max-content;
     max-width: 523px;
     width: 90%;
     padding: 20px 34px;
+    z-index: 2;
+    
   }
   .modal-title{
     font-size: 36px;
@@ -1333,7 +1342,7 @@ footer::after {
   }
 
   .section__about-us-text {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .section__about-us-foto {
@@ -1398,8 +1407,12 @@ footer::after {
     text-align: center;
     background: linear-gradient(to bottom, rgba(235, 243, 255, 1) 5%, rgba(235, 243, 255, 0.8) 30%, rgba(235, 243, 255, 0.2) 65%);
     padding-bottom: 48px;
+    z-index: 0;
   }
-
+  .section__swiper{
+    position: relative;
+    z-index: 0;
+  }
   .swiper-container {
     min-height: 345px;
   }
@@ -1407,6 +1420,7 @@ footer::after {
   .section__procedures-container {
     padding: 0 20px;
     gap: 16px;
+    z-index: 0;
 
   }
 
@@ -1534,6 +1548,7 @@ footer::after {
     height: 100%;
     max-width: 683px;
     width: 100%;
+    z-index: 2;
   }
 
   .modal-title {
