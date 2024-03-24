@@ -1,0 +1,41 @@
+/* #region menu */
+
+.menu {
+  
+  height: 100vh;
+  background-color: #E8EFF9;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu__top{
+  margin-bottom: 32px;
+}
+.menu__nav{
+  margin-bottom: 40px;
+}
+
+.menu__content{
+padding-inline: 20px;
+}
+
+.menu__phone-number{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 27px;
+  color: inherit;
+  display: block;
+  margin-bottom: 16px;
+}
+.menu__call-to-order{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #292929;
+  width: fit-content;
+}
+/* #endregion */
